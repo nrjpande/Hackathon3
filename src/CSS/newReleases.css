@@ -1,0 +1,124 @@
+.top-heading-nr{
+    margin-top: 30px;
+    align-content: center;
+    text-align: center;
+    color: orange;
+    font-size: 70px;
+    text-decoration: underline;
+}
+
+.container-nr{
+    width: 1200px;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+    margin: 0 auto;
+}
+
+.slider-container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.movies-list-nr {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .movie-item-nr {
+    flex: 0 0 calc(30% - 20px);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .movie-image-nr img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+  
+  .movie-details-nr {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+  
+  .movie-poster-nr img {
+    width: 270px;
+    height: 420px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+
+  .movie-info-nr {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+  }
+  
+  .movie-info-nr h3 {
+    margin: 0;
+    background-color: orange;
+    font-size: 50px;
+    padding: 5px;
+    color: black;
+    text-align: center;
+  }
+  
+  .movie-rating-nr {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+  }
+
+  .movie-rating-nr::before {
+    content: "\2605"; 
+    color: orange;
+    font-size: 35px; 
+    margin-right: 5px; 
+  } 
+  
+  .movie-overview-nr {
+    margin-top: 10px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .movie-item-nr {
+      flex: 0 0 calc(50% - 20px);
+    }
+  
+    .movie-info-nr h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-item-nr {
+      flex: 0 0 calc(100% - 20px);
+    }
+  
+    .movie-poster-nr img {
+      width: 100px;
+      height: 140px;
+    }
+  
+    .movie-info-nr h3 {
+      font-size: 1rem;
+    }
+  
+    .movie-rating-nr {
+      font-size: 5vw;
+    }
+  }
+  
